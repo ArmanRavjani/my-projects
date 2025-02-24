@@ -1,0 +1,119 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* .heading{
+    background-color: aquamarine;
+    text-align: center;
+} */
+
+body{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #af4d98;
+}
+
+div{
+    height: 100%;
+    width: 300px;
+    background-color: lightblue;
+    padding: 2rem;
+    min-height: 45vh;
+   align-items: center;
+    margin-top: 1rem;
+   }
+ button {
+    height: 3rem;
+    background-color: chocolate;
+    color: white;
+    font-size: 1.15rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin-left: 50px;
+    align-items: center;
+    width: 200px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0s ease-in;
+}
+
+.input{
+    background-color: cadetblue;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    height: 2rem;
+    color: aliceblue;
+    width: 250px;
+    margin-left: 25px;
+}
+input::placeholder{
+    text-align: center;
+}
+
+p{
+    color:cornflowerblue;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+label{
+   font-size: 1.3rem;
+   color: #5f9ea0;
+   margin-left: 50px;
+}
+
+h2{
+   background-color: darkkhaki;
+   text-align: center;
+   color: black; 
+   height: 50px;
+   font-size: 2rem;
+   border: 2px solid black;
+   border-radius: 0.4rem;
+}
+
+input:hover {
+    border: 2px solid orange;
+}
+
+@keyframes borderAnimation {
+    0%{
+        border-image-source: linear-gradient(0deg,#ff0000,#ff7300);
+    }
+    25%{
+        border-image-source: linear-gradient(90deg,#ff7300,#ffd700);   
+    }
+    50%{
+        border-image-source: linear-gradient(180deg,#ffd700,#00ff00);
+    }
+    75%{
+        border-image-source: linear-gradient(270deg,#00ff00,#007bff);
+    }
+    100%{
+        border-image-source: linear-gradient(360deg,#007bff,#ff0000);
+    }
+}
+
+.Animated-border{
+    border: 5px solid;;
+    border-image-slice: 1;
+    animation: borderAnimation 3s infinite linear;
+    
+}
+
+button:hover{
+    border: 2px solid white;
+}
+
+.green-background {
+    background-color: green !important;
+}
+
