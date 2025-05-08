@@ -3,52 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>my projects</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+li a::before {
+    content: "📁 ";
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+    </style>
 </head>
 <body>
-    <!-- <div class="heading">
-          <h1>Registration Form</h1>
-     </div> -->
-<div class="Container Animated-border">
-   
-    <h2>Registration Form</h2>
-    <br>
+    <div class="container">
+    <h1>📂 Welcome to My Project</h1>
+    <p>Select a folder to explore:</p>
 
+    <ul id="folder-list">
+        <li><a href="Amazon Clone/">Amazon Clone</a></li>
+        <li><a href="Tic Tac Toe Game/">Tic Tac Toe Game</a></li>
+        <li><a href="Registration Form/">Registration Form</a></li>
+        <li><a href="Sundown Studio/">Sundown Studio</a></li>
+        <li><a href="Rock Paper Scissor Game/">Rock Paper Scissor Game</a></li>
+        <li><a href="Color Changer/">color Changer</a></li>
+        <li><a href="Currency Converter/">Currency Converter</a></li>
+        <li><a href="Wizardz/">Wizardz</a></li>
+    </ul>
 
-    <p>Enter Username</p>
-    <br>
-    <input placeholder="Enter your Username" class="input">
-    <br>
-    <br>
-    <p>Enter your EmailId</p>
-    <br>
-    <input placeholder="Enter your EmailId" class="input">
-    <br>
-    <br>
-    <p>Enter Your Age</p>
-    <br>
-    <input placeholder="Enter Your Age" class="input">
-    <br>
-    <br>
-    <p>Gender</p>
-    <br>
-    <label for="Male">
-        <input type="radio" value="Male" name="class" class="label">Male
-    </label> 
-    <label for="Female">
-        <input type="radio" value="Female" name="class" class="label">Female
-
-    </label>
-    <br>
-    <br>
-    <button id="btn">Submit</button>
-   
-    
 </div>
-
-
-
-    <script src="app.js"></script>
-</body> 
+</body>
 </html>
